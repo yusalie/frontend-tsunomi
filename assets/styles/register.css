@@ -1,0 +1,12 @@
+#register-form {
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+  position: absolute;
+  left: 41%;
+  top: 23%;
+}
+
+body {
+  background-color: #e4e2e2;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/styles/payment.css" />
+    <title>Payment</title>
+  </head>
+  <body onload="amountItems()">
+    <form class="" action="index.html" method="post" id="payment">
+      <label for="cardnum">Card Number:</label>
+      <input type="text" name="cardnum" value="" id="cardnum" required /><br />
+      <label for="name">Name of card holder:</label>
+      <input type="text" name="name" value="" id="name" required /><br />
+      <label for="expire">date on card</label>
+      <input type="text" name="expire" value="" id="expire" required /><br />
+      <label for="cvc">CVC</label>
+      <input type="text" name="cvc" value="" id="cvc" required /><br />
+      <label for="">total:<label id="amount-pay">0</label></label>
+      <button type="button" name="button" onclick="checkout()">Pay now</button>
+    </form>
+    <script src="assets/script/payment.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+#mangamodal {
+  display: flex;
+  top: -100%;
+  left: 0;
+  position: fixed;
+  transition: all 0.3s cubic-bezier(1, -0.94, 0, 3.64);
+  width: 100vw;
+  z-index: 1000;
+  background: white;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.modal {
+  display: flex;
+}
+
+#modal .manga {
+  width: 60%;
+  min-width: 250px;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+p1 {
+  padding-top: 5px;
+}
+#manga_img {
+  height: 50%;
+  width: 40%;
+  object-fit: contain;
+}
+#close {
+  /* width: 9%; */
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 250%;
+}
+
+#close:hover {
+  color: #111344;
+}
+
+@keyframes button {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
+    background-color: blue;
+  }
+}
+
+.mangaInfo {
+  position: absolute;
+  left: 11%;
+  display: flex;
+  flex-direction: column;
+}
+#syn {
+  width: 98%;
+}
+@media only screen and (max-width: 600px) {
+  #modal {
+    display: flex;
+    top: -100%;
+    left: 0;
+    position: fixed;
+    transition: all 0.3s linear;
+    width: 158vw;
+    z-index: 1000;
+    background: white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  #manga_img {
+    width: 10%;
+  }
+  .modal {
+    display: flex;
+    top: -100%;
+    left: 0;
+    position: fixed;
+    transition: all 0.3s linear;
+    width: 69vw;
+    z-index: 1000;
+    background: white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

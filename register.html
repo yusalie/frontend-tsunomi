@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/styles/register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <form
+      id="register-form"
+      class="user_form"
+      onsubmit="event.preventDefault(); registerCust()"
+    >
+      <label for="firstname">Firstname:</label><br />
+      <input type="text" id="firstname" name="firstname" required /><br />
+      <label for="lastname">Lastname:</label><br />
+      <input type="text" id="lastname" name="lastname" required /><br />
+      <label for="fname">Username:</label><br />
+      <input type="text" id="username" name="username" required /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" required /><br />
+      <div
+        class="g-recaptcha"
+        data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"
+      ></div>
+      <button id="regBtn" type="submit" name="button">
+        Register
+      </button>
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="./assets/script/profile.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/styles/menu.css" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/cart.css" />
+    <link rel="stylesheet" href="../assets/styles/modal.css" />
+    <link rel="stylesheet" href="../assets/styles/modal.css" />
+    <link rel="stylesheet" href="../assets/styles/person.css" />
+    <link rel="stylesheet" href="../assets/styles/mode.css" />
+    <link rel="stylesheet" href="../assets/styles/preloader.css" />
+    <link rel="stylesheet" href="../assets/styles/search.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Tsunomi</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <div class="menuBtn" onclick="menuOpen()">
+      <i class="fa fa-bars"></i>
+    </div>
+    <img src="assets/logo/logo1.png" id="logo" alt="" />
+    <nav id="menu" class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <label id="toggleMode">
+          <button type="button" name="button" onclick="toggleMode()">
+            dark mode
+          </button>
+        </label>
+
+        <li onclick="menuOpen()" id="closebtn">X</li>
+      </ul>
+    </nav>
+    <div id="user_form">
+      <form
+        id="login-form"
+        class="user_form"
+        onsubmit="event.preventDefault(); login()"
+      >
+        <label for="username" lbU>Username:</label><br />
+        <input type="text" id="username" name="username" required /><br />
+        <label for="psswrd" id="lbpss">Password:</label><br />
+        <input type="password" id="password" name="password" required />
+        <button id="loginBtn" type="submit" name="button">
+          Login
+        </button>
+        <button id="regBtn" type="button" name="button">
+          <a href="register.html">Register New User</a>
+        </button>
+      </form>
+    </div>
+    <div class="cart">
+      <i class="fa fa-user" id="user" onclick="showPerson()"></i>
+      <label for="cart" id="amount">0</label>
+      <i
+        class="fa fa-shopping-cart"
+        id="cart"
+        onclick="renderCart(); showCart()"
+      ></i>
+    </div>
+    <div class="search">
+      <input
+        type="text"
+        placeholder="Search by title, author or genre"
+        id="searchBar"
+      />
+      <button type="button" name="button" onclick="search()">
+        Search <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <div id="mangas"></div>
+    <div id="modal"></div>
+    <div id="register"></div>
+    <div id="cartMenu">
+      <div id="cartList"></div>
+      <div id="checkout">
+        <button type="button" name="button">
+          <a href="payment.html">checkout</a>
+        </button>
+      </div>
+    </div>
+    <!-- <footer>
+      <div class="contact">
+        <h1>Contact</h1>
+        <ul>
+          <li>Email:</li>
+          <li>Number:</li>
+        </ul>
+      </div>
+    </footer> -->
+    <script src="../assets/script/index.js" charset="utf-8"></script>
+    <script src="../assets/script/menu.js" charset="utf-8"></script>
+    <script src="../assets/script/cart.js" charset="utf-8"></script>
+    <script src="../assets/script/profile.js" charset="utf-8"></script>
+    <script src="../assets/script/login.js" charset="utf-8"></script>
+    <script src="../assets/script/mode.js" charset="utf-8"></script>
+    <script src="../assets/script/search.js" charset="utf-8"></script>
+  </body>
+</html>

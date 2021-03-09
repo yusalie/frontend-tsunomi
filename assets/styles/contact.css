@@ -1,0 +1,18 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 21%;
+  left: 40%;
+  position: absolute;
+  top: 20%;
+}
+
+body {
+  background-color: #e4e2e2;
+}
+@media only screen and (max-width: 600px) {
+  #contact {
+    width: 55%;
+    left: 28%;
+  }
+}

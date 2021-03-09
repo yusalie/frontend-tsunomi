@@ -1,0 +1,16 @@
+.user_form {
+  display: flex;
+  top: 48px;
+  right: -100%;
+  position: fixed;
+  transition: all 0.3s cubic-bezier(0.32, -0.41, 0.54, 1.6);
+  width: 15vw;
+  z-index: 1000;
+  background: #e4e2e2;
+  flex-direction: column;
+  padding: 5px 11px 5px 6px;
+}
+
+.active {
+  right: 0px;
+}

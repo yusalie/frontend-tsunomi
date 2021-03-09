@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/styles/menu.css" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/cart.css" />
+    <link rel="stylesheet" href="../assets/styles/modal.css" />
+    <link rel="stylesheet" href="../assets/styles/modal.css" />
+    <link rel="stylesheet" href="../assets/styles/person.css" />
+    <link rel="stylesheet" href="../assets/styles/mode.css" />
+    <link rel="stylesheet" href="../assets/styles/preloader.css" />
+    <link rel="stylesheet" href="../assets/styles/search.css" />
+    <link rel="stylesheet" href="../assets/styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <div class="menuBtn" onclick="menuOpen()">
+      <i class="fa fa-bars"></i>
+    </div>
+    <img src="assets/logo/logo1.png" id="logo" alt="" />
+    <nav id="menu" class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li
+        <li><a href="#">Contact</a></li>
+        <label id="toggleMode">
+          <button type="button" name="button" onclick="toggleMode()">
+            dark mode
+          </button>
+        </label>
+
+        <li onclick="menuOpen()" id="closebtn">X</li>
+      </ul>
+    </nav>
+    <form action="https://formspree.io/f/xgepgowy" method="POST" id="contact">
+      <label for="name">Name:</label>
+      <input type="text" name="name" placeholder="Name" required />
+      <label for="_replyto">Email:</label>
+      <input type="email" name="_replyto" placeholder="Email" required />
+      <label for="message">Message:</label>
+      <textarea
+        rows="5"
+        name="message"
+        id="message"
+        placeholder="message"
+        required
+      ></textarea>
+      <!-- <div
+        class="g-recaptcha"
+        data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"
+      ></div> -->
+      <input type="submit" value="Send" />
+    </form>
+    <div id="cartMenu">
+      <div id="cartList"></div>
+      <div id="checkout">
+        <button type="button" name="button">
+          <a href="payment.html">checkout</a>
+        </button>
+      </div>
+    </div>
+    <script src="../assets/script/index.js" charset="utf-8"></script>
+    <script src="../assets/script/menu.js" charset="utf-8"></script>
+    <script src="../assets/script/cart.js" charset="utf-8"></script>
+    <script src="../assets/script/profile.js" charset="utf-8"></script>
+    <script src="../assets/script/login.js" charset="utf-8"></script>
+    <script src="../assets/script/mode.js" charset="utf-8"></script>
+    <script src="../assets/script/search.js" charset="utf-8"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #99918f;
+  animation: disappear 6.5s linear forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes disappear {
+  0%,
+  90% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.loader {
+  background-color: grey;
+  animation: spin 2s linear infinite;
+}
+
+#bar {
+  background-color: blue;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

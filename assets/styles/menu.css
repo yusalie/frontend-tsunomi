@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#menu ul {
+  font-size: 25px;
+  width: 17vw;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: all 0.3s cubic-bezier(0.21, 0.39, 0.73, 1.1);
+  list-style-type: none;
+  background: #e4e2e2;
+  height: 100vh;
+}
+
+.menuBtn {
+  font-size: 43px;
+  width: 80px;
+}
+
+#closebtn {
+  top: 0%;
+  position: absolute;
+  right: 2%;
+}
+
+#closebtn:hover {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkblue;
+}
