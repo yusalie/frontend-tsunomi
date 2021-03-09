@@ -1,6 +1,6 @@
-function checkout() {
-  localStorage.clear();
-}
+// function checkout() {
+//   localStorage.clear();
+// }
 
 function amountItems() {
   cart = localStorage.getItem("cart");

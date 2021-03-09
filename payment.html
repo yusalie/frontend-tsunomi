@@ -16,8 +16,13 @@
       <label for="cvc">CVC</label>
       <input type="text" name="cvc" value="" id="cvc" required /><br />
       <label for="">total:<label id="amount-pay">0</label></label>
+      <div
+        class="g-recaptcha"
+        data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"
+      ></div>
       <button type="button" name="button" onclick="checkout()">Pay now</button>
     </form>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="assets/script/payment.js" charset="utf-8"></script>
   </body>
 </html>
