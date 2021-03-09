@@ -44,4 +44,8 @@
   #menu {
     width: 25%;
   }
+  h4{
+    font-size: 95%;
+    padding: 26px 1px 14px 44px;
+  }
 }
