@@ -1,3 +1,4 @@
+/* Div to cover page and hide content */
 .preloader {
   position: fixed;
   top: 0;
@@ -5,7 +6,7 @@
   left: 0;
   right: 0;
   height: 100vh;
-  background-color: #99918f;
+  background-color: #e76f51;
   animation: disappear 5s linear forwards;
   display: flex;
   justify-content: center;
@@ -24,8 +25,10 @@
   }
 }
 
+/* Spinner */
 .loader {
-  border-right: 16px solid #420217;
+  border: 16px solid #f4a261;
+  border-top: 16px solid #e9c46a;
   border-radius: 50%;
   width: 120px;
   height: 120px;
