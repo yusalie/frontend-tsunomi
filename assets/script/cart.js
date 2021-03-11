@@ -71,3 +71,9 @@ function remCart() {
     `);
   });
 }
+
+function amountItem() {
+  total = JSON.parse(localStorage.getItem("cart")).length * 8;
+  console.log(total);
+  document.getElementById("amountin").innerHTML = "$" + total;
+}
