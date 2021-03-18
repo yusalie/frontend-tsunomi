@@ -15,7 +15,7 @@ function createCard(manga) {
   let book = `
       <div class="manga">
         <h4>${manga.title}</h4>
-        <img src=${manga.img} alt=${manga.title}/>
+        <img src=${manga.img} alt=${manga.title} id="mangaCard"/>
         <button id="viewbtn" type="button" name="button"" onclick="disMod(${manga.id})">View Info</button>
       </div>
     `;
